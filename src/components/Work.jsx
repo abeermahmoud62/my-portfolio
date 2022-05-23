@@ -1,16 +1,19 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import projects from '../ProjectsData.js'
 const Work = () => {
   const projectsList = projects.map((project, index) => {
     return (
       <WorkItem key={index}>
-        <Image src={project.image} alt={project.name} />
+        <NavLink to={`/${project.id}`}>
+          <Image src={project.img} alt={project.name} />
+        </NavLink>
       </WorkItem>
     )
   })
   return (
-    <Container>
+    <Container id="my-work">
       <MainTitle>My Work</MainTitle>
       <SubTitle>A selection of my range of work</SubTitle>
       <Wrapper>{projectsList}</Wrapper>

@@ -4,22 +4,25 @@ import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
 const Footer = () => {
   return (
     <Container>
-      <Mail href="mailto:abeermahmoudali9298@gmail.com">
+      <Mail target="_blank" href="mailto:abeermahmoudali9298@gmail.com">
         abeermahmoudali9298@gmail.com
       </Mail>
       <List>
         <SocialItem>
-          <SocialLink href="https://github.com/abeermahmoud62">
+          <SocialLink target="_blank" href="https://github.com/abeermahmoud62">
             <FaGithub />
           </SocialLink>
         </SocialItem>
         <SocialItem>
-          <SocialLink href="https://www.linkedin.com/in/abeer-mahmoud-b567b6172/">
+          <SocialLink
+            target="_blank"
+            href="https://www.linkedin.com/in/abeer-mahmoud-b567b6172/"
+          >
             <FaLinkedin />
           </SocialLink>
         </SocialItem>
         <SocialItem>
-          <SocialLink href="https://twitter.com/AbeerMahmoud62">
+          <SocialLink target="_blank" href="https://twitter.com/AbeerMahmoud62">
             <FaTwitter />
           </SocialLink>
         </SocialItem>

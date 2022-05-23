@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 const IntroSection = () => {
   return (
-    <Container>
+    <Container id="home">
       <Title className="title">
         Hi, I am <strong>Abeer M. Ali</strong>
       </Title>

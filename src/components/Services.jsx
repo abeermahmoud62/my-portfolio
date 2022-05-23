@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 const Services = () => {
   return (
-    <Container>
+    <Container id="my-services">
       <MainTitle>What I do</MainTitle>
       <Wrapper>
         <SubTitle>Design + Development</SubTitle>
@@ -13,7 +13,9 @@ const Services = () => {
           development, and I am constantly learning <br /> new technologies.
         </Text>
       </Wrapper>
-      <Link href="#my-work">See my Work</Link>
+      <Link href="#my-work" color="#16e0bd">
+        See my Work
+      </Link>
     </Container>
   )
 }
@@ -48,11 +50,12 @@ const Text = styled.p`
 `
 const Link = styled.a`
   color: var(--clr-dark);
-  background: var(--clr-accent);
+  background: ${(props) => props.color};
   font-weight: var(--fw-bold);
   padding: 0.5em 1.5em;
   text-decoration: none;
   display: inline-block;
+  margin-right: 1.5em;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 1rem;

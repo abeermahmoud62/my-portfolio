@@ -5,7 +5,7 @@
 }
 /* custom properties */
 :root {
-  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-primary: 'Lora', serif;
   --ff-secondary: 'Source Code Pro', monospace;
 
   --fw-reg: 300;
@@ -31,6 +31,9 @@
   }
 }
 /* general styles  */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -38,7 +41,7 @@ body {
   font-weight: var(--fw-reg);
   font-size: var(--fs-body);
   margin: 0;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 img {

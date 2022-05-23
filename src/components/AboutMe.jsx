@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 const AboutMe = () => {
   return (
-    <Container>
+    <Container id="about-me">
       <MainTitle>Who I am</MainTitle>
       <SubTitle>Front-end web developer using React JS</SubTitle>
       <Wrapper>
