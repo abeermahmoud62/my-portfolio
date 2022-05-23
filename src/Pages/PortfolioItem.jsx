@@ -15,8 +15,6 @@ const PortfolioItem = () => {
       </Wrapper>
       <Section>
         <iframe
-          width="860"
-          height="515"
           src={product.video}
           title="YouTube video player"
           frameborder="0"
@@ -89,31 +87,42 @@ const SubTitle = styled.p`
     width: calc(100% + 1.5em);
   }
 `
-// const Image = styled.img`
-//   box-shadow: var(--bs);
-//   @media (min-width: 600px) {
-//     grid-area: img;
-//     min-width: 250px;
-//     position: relative;
-//     z-index: 2;
-//   }
-// `
 
-const Section = styled.section``
+const Section = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  iframe {
+    width: 700px;
+    height: 515px;
+  }
+  @media (max-width: 800px) {
+    iframe {
+      width: 80vw;
+      height: 415px;
+    }
+  }
+`
 const Details = styled.section`
   border: 1px solid var(--clr-dark);
   padding: 1em;
   margin: 1em 0;
+  @media (max-width: 800px) {
+    width: 80vw;
+  }
 `
-// const Name = styled.h3``
-// const Desc = styled.p``
 const Date = styled.p``
 const Tech = styled.p``
 const Repo = styled.a``
 const Link = styled.a`
+  font-size: 1.1rem;
   color: var(--clr-dark);
   text-decoration: none;
+  word-break: break-all;
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: 800px) {
+    width: 80vw;
   }
 `

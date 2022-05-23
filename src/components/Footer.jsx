@@ -38,6 +38,7 @@ const Container = styled.footer`
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
+  width: 100%;
 `
 const Mail = styled.a`
   color: inherit;
